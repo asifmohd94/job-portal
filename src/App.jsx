@@ -7,7 +7,7 @@ import PostJob from "./components/pages/post-job";
 import SavedJobs from "./components/pages/saved-job";
 import JobPage from "./components/pages/job";
 import MyJobs from "./components/pages/my-jobs";
-import './app.css';
+import './App.css';
 import { ThemeProvider } from "./components/theme-provider";
 import ProtectedRoute from "./components/protectedRoute";
 
