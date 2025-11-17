@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./layout";
 import HomePage from "./components/pages/home-page";
-import OnBoarding from "./components/pages/onBoarding";
+import OnBoarding from "./components/pages/onboarding";
 import JobListing from "./components/pages/job-listing";
 import PostJob from "./components/pages/post-job";
 import SavedJobs from "./components/pages/saved-job";
