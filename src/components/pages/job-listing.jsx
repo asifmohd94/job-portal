@@ -27,12 +27,7 @@ const JobListing = () => {
   if (!isLoaded) {
     return <BarLoader className="mb-4" width={"100%"} color="#36d7b7" />
   }
-  useEffect(() => {
-    if (jobsData) {
-      console.log("jobsData INSIDE useEffect after fetch =>", jobsData);
-    }
-  }, [jobsData]);
-  console.log("jobsData INSIDE useEffect after fetch =>123", jobsData);
+ 
   return (
     <div className='flex flex-col items-center justify-center'> 
       <h1 className='gradient-title text-6xl sm:text-7xl font-extrabold pb-8'>
@@ -50,7 +45,7 @@ const JobListing = () => {
             {
               jobsData?.length ? (
                 jobsData?.map((job) => {
-                  return <JobCard key={job?.id} job={job}/>
+                  return <JobCard key={job?.id} job={job} savedInit={job?.saved?.length > 0}/>
                 })
               ) : (
                 <div>No jobs found 😥</div>
